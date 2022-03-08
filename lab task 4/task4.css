@@ -41,9 +41,10 @@ div.head{
 }
 div.mcm{
     background-color: #FFFFFF;
-    position: relative;
+    position: absolute;
     margin-top: auto;
     margin-right: auto;
+    top: 305px;
     width: 960px;
     height: 700px;
 }
