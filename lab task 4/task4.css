@@ -41,11 +41,10 @@ div.head{
 }
 div.mcm{
     background-color: #FFFFFF;
-    position: absolute;
+    position: relative;
     margin-top: auto;
     margin-right: auto;
-    top: 305px;
-    width: 100%;
+    width: 960px;
     height: 700px;
 }
 div.cea{
@@ -74,7 +73,6 @@ div.food{
 figure {
   padding: 10px;
   margin: auto;
-  width: auto;
 
 }
 
