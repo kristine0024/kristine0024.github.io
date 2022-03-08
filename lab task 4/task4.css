@@ -41,31 +41,27 @@ div.head{
 }
 div.mcm{
     background-color: #FFFFFF;
-    position: relative;
-    margin-top: auto;
-    margin-right: auto;
-    width: 960px;
+    left: 10px;
+    width: 950px;
     height: 700px;
+
 }
 div.cea{
     background-color: #FFFFFF;
-    position: relative;
-    margin-top: auto;
-    margin-right: auto;
-    width: 960px;
+    left: 10px;
+    width: 950px;
     height: 650px;
+
 }
 div.me{
     background-color: #FFFFFF;
     position: absolute;
-    margin-top: auto;
     top: 305px;
     right: 10px;
 }
 div.food{
     background-color: #FFFFFF;
     position: absolute;
-    margin-top: auto;
     top: 820px;
     right: 10px;
 }
