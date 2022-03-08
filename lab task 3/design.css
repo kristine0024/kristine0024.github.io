@@ -1,0 +1,159 @@
+/*buttons*/
+.button {
+  background-color: #00B09B;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 0.3}
+
+.button2 {
+  background-image: url("facebook.png");
+  border: none;
+  border-radius: 80px;
+  padding: 20px 20px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button2:hover {opacity: 0.3}
+
+.button3 {
+  background-image: url("twitter.png");
+  border: none;
+  border-radius: 80px;
+  padding: 20px 20px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button3:hover {opacity: 0.3}
+
+.button4 {
+  background-image: url("github.png");
+  border: none;
+  border-radius: 80px;
+  padding: 20px 20px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button4:hover {opacity: 0.3}
+
+div.icons{
+    text-align: left;
+}
+
+/*endbuttons*/
+
+body {
+    font-family: Arial;
+    font-size: 150%;
+    background-color:black;
+}
+
+div.part1 {
+    color: white;
+    text-align: center;
+    border:none;
+    background-image:url("header.jpg");
+    border-radius:20px;
+}
+div.part2 {
+    color: white;
+
+}
+div.part3 {
+    color: white;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left:100px;
+}
+div.part4 {
+    color: white;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left:100px;
+    font-style: italic;
+}
+
+nav{
+    text-align: left;
+    margin-left:100px;
+    margin-top:20px;
+}
+
+.small{
+    font-variant: small-caps;
+}
+
+nav.icons{
+    text-align: left;
+    margin-left:280px;
+    margin-bottom:123px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background: #00B09B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:50px;
+}
+
+/*paragraphQuotes*/
+p.intro{
+    text-align: left;
+    margin-left:130px;
+    margin-top: 100px;
+}
+p.quote{
+    text-align: left;
+    margin-left:210px;
+}
+p.fquote{
+    text-align: center;
+}
+/*EndparagraphQuotes*/
+
+h2{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    background: #00B09B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:50px;
+}
+
+footer{
+    text-align: center;
+    color:white;
+    padding: 30px;
+    background-color: #00B09B;
+    border-radius:20px;
+}
