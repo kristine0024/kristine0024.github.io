@@ -1,0 +1,33 @@
+
+div{
+    width: 400px;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+}
+h1{
+    font-family:courier new;
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    font-size:17px;
+}
+
+.press{
+    background-color:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+.press:hover {
+  background-color: #3e8e41;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

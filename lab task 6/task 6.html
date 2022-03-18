@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="task6.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating Form Data</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+    <script>
+    function ValForm() {
+        var Fname = document.forms["dataForm"]["FirstName"];
+        var Mname = document.forms["dataForm"]["MiddleName"];
+        var Lname = document.forms["dataForm"]["LastName"];
+        var email = document.forms["dataForm"]["EMail"];
+
+        if (Fname.value == "") {
+            Fname.focus();
+            return false;
+        }
+
+        if (Mname.value == "") {
+            Mname.focus();
+            return false;
+        }
+
+        if (Lname.value == "") {
+            Lname.focus();
+            return false;
+        }
+
+        if (email.value == "") {
+            email.focus();
+            return false;
+        }
+        return true;
+    }
+    function validate() {
+            if(ValForm() == true){
+            window.alert("Success!");
+            }
+    }
+</script>
+</head>
+
+<body>
+    <div>
+    <h1>Sign Up</h1>
+    <form name="dataForm" onsubmit="validate()" method="post">
+    <ul>
+        <li><input type="text" name="FirstName" placeholder="First Name" required/></li>
+        <br>
+
+        <li><input type="text" name="MiddleName" placeholder="Middle Name" required/></li>
+        <br>
+
+        <li><input type="text" name="LastName" placeholder="Last Name" required/></li>
+        <br>
+
+        <li><input type="email" name="EMail" placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required/></li>
+        <br>
+
+        <li><p><input type="submit" class="press" value="Submit" name="Submit" /></li>
+        <br>
+
+        <li><input type="reset" class="press" value="Reset" name="Reset" /></p></li>
+        <br>
+    <ul>
+    </form>
+    </div>
+</body>
+
+</html>
