@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="sis.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+
+    <script>
+    function ValForm() {
+        var name = document.forms["dataForm"]["USERNAME"];
+        var pass = document.forms["dataForm"]["PASSWORD"];
+
+        if (name.value === "admin" && pass.value ==="admin") {
+            window.location.href="info.html";
+        }
+
+        if (name.value === "student1" && pass.value ==="1234") {
+            window.location.href="student.html";
+        }
+
+        if (name.value === "teacher1" && pass.value ==="1234") {
+            window.location.href="teacher.html";
+        }
+
+    }
+
+    </script>
+</head>
+
+<body class="indexPage">
+    <div class="login" id="li">
+    <img class="logo" src = "assets/logo2.png"></img>
+    <div class="error" id="error" style="display:none">
+    <p><i class="glyphicon glyphicon-remove"></i>
+        <b>Error:</b> Incorrect username or password. <br>  Please try logging in again.</p>
+    </div>
+    <br>
+    <form name="dataForm" onsubmit="ValForm()" method="POST">
+    <ul class="form">
+        <li><input type="text" name="USERNAME" id="USERNAME" required/><label>Username</label></li>
+        <br>
+
+        <li><input type="text" name="PASSWORD" id="PASSWORD" required/><label>Password</label></li>
+        <p class="forgot"><a class="login" href="#">Forgot Password?</a></p>
+        <br>
+
+        <li><input type="submit" class="press" value="Log In" name="LOGIN" /></li>
+        <br><br><br>
+
+        <li><p>© 2022 Malayan Colleges Mindanao. All Rights Reserved.</p></li>
+        <li><p><a class="login" href="info.html">About</a></p>
+            <p><a class="login" href="#">Privacy & Terms</a></p></li>
+    <ul>
+    </form>
+    </div>
+
+</body>
+
+</html>

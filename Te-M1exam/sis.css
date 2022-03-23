@@ -1,0 +1,221 @@
+
+/*Bodies*/
+body.indexPage{
+    background-image: url("assets/mcm.jpg");
+    width:500px;
+    height:500px;
+}
+body.infoPage{
+    background-color:white;
+}
+
+/*endBodies*/
+
+/*footer*/
+div.footer{
+    background-color: #261B4B;
+    height:70px;
+    color:white;
+    text-align:center;
+}
+/*endfooter*/
+
+
+/*Divs*/
+div.login{
+    position:absolute;
+    top:10%;
+    left:33%;
+    width: 400px;
+    padding:5px;
+    background-color:#DEE5EC;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-radius: 10px;
+    font-family:arial;
+}
+
+div.error{
+    position:relative;
+    left:40px;
+    background-color:white;
+    width: 300px;
+    height: 50px;
+    padding:5px;
+    border-radius:10px;
+    color:red;
+}
+
+div.admin{
+    background-color: #FFFFFF;
+    width: 1350px;
+    height: 700px;
+}
+
+div.student{
+    background-color: #FFFFFF;
+    width: 1350px;
+    height: 700px;
+}
+div.teacher{
+    background-color: #FFFFFF;
+    width: 1350px;
+    height: 700px;
+}
+
+div.menu{
+    position:relative;
+    background-color: #261B4B;
+    top:0px;
+    left:0px;
+    width:250px;
+    height: 653px;
+
+}
+
+div.about{
+    background-color: white;
+    margin-top:50px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:100px;
+}
+
+div.offer{
+    background-color: #AB1515;
+    height:650px;
+}
+
+div.line{
+    background-color: white;
+    height:700px;
+}
+
+/*endDivs*/
+
+
+/*dataForminput*/
+p.forgot{
+    text-align: right;
+}
+h1.program{
+    color:white;
+    font-size:50px;
+    text-align:center;
+}
+h1.aboutus{
+    font-size:50px;
+    text-align:center;
+}
+h1.line{
+    font-size:50px;
+    text-align:center;
+}
+
+img.logo{
+    padding:10px;
+    width:200px;
+}
+img.offer{
+    padding:20px;
+    width:300px;
+    height:395;
+}
+img.line{
+    padding:20px;
+    width:400px;
+    height:400px;
+}
+
+
+input{
+    width: 350px;
+    height: 30px;
+    font-size:17px;
+}
+
+.press{
+    background-color:#45818E;
+    color:white;
+    border:none;
+    border-radius:20px;
+    width: 100px;
+    height: 50px;
+
+}
+.press:hover {
+  background-color: #134F5C;
+}
+/*endDataForminput*/
+
+
+/*ulPages*/
+ul.form {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.ulpage {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #261B4B;
+}
+li.ulpage{
+ float: left;
+}
+/*****/
+ul.offerings {
+ list-style-type: none;
+ margin: 60px;
+ padding: 10px;
+ overflow: hidden;
+}
+li.offerings{
+ float: left;
+}
+
+ul.line {
+ list-style-type: none;
+ margin: 60px;
+ padding: 10px;
+ overflow: hidden;
+}
+li.line{
+ float: left;
+}
+/****/
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li.menu{
+    border :1px solid #1F163E;
+    font-size:20px;
+}
+
+
+/****/
+
+a.active {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 20px 16px;
+ text-decoration: none;
+}
+a.active:hover {
+    background-color:#1F163E;
+}
+li.side{
+ float: right;
+ color: white;
+ display: block;
+ padding: 14px 16px;
+}
+
+/*endUlPages*/
