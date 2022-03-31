@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Information System</title>
+  <link rel="icon" type="image/x-icon" href="assets/logo.png">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+
+<body>
+<div class = "container">
+    <div class= "header">
+
+      <img class="logo" src="assets/logo2.png">
+      <h2>SIS Log In</h2>
+    </div>
+    <form class = "form" id="form">
+       <div class = "form-control">
+           <input type = "text"  class="input" id="username" placeholder = "Username"required/>
+           <img class="CH" src="assets/ch.png">
+           <img class="X" src="assets/x.png">
+           <small>Incorrect username. Please enter again.</small>
+       </div>
+
+        <div class = "form-control">
+           <input type = "password"  class="input" id="password" placeholder = "Password" required/>
+           <img class="CH" src="assets/ch.png">
+           <img class="X" src="assets/x.png">
+           <small>Incorrect password. Please enter again.</small>
+        </div>
+
+        <div class="dropdown">
+            <span>Forgot Password?</span>
+            <div class="dropdown-content">
+                <p>
+                    <ul>
+                        <li>user: admin; pass: admin</li><br>
+                        <li>user: student1; pass: 1234</li><br>
+                        <li>user: teacher1; pass: 1234</li><br>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class = "btn">
+            <ul class="login">
+                <li><input type = "submit" value = "Log in"></li>
+            </ul>
+        </div>
+    </form>
+    <br><br>
+
+    <div class="below">
+        <ul class="below">
+            <li>© 2022 Malayan Colleges Mindanao. All Rights Reserved.</li>
+            <li class="below"><a class="info" href= "info.html">About Us</a></li>
+            <li class="below"><a class="info" href= "#">Privacy & Terms</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script type = "text/javascript" src = "login.js"></script>
+
+</body>
+
+</html>

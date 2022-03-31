@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="sis.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script>
+        function show1() {
+          document.getElementById("cs").style.visibility = "visible";
+          document.getElementById("gr").style.visibility = "hidden";
+        }
+
+        function show2() {
+          document.getElementById("cs").style.visibility = "hidden";
+          document.getElementById("gr").style.visibility = "visible";
+          document.getElementById("en1").style.visibility = "hidden";
+          document.getElementById("en2").style.visibility = "hidden";
+          document.getElementById("en3").style.visibility = "hidden";
+          document.getElementById("en4").style.visibility = "hidden";
+        }
+
+        function enroll1() {
+          document.getElementById("en1").style.visibility = "visible";
+          alert("Succesfully Enrolled Kristine!");
+        }
+        function enroll2() {
+          document.getElementById("en2").style.visibility = "visible";
+           alert("Succesfully Enrolled John!");
+        }
+        function enroll3() {
+          document.getElementById("en3").style.visibility = "visible";
+           alert("Succesfully Enrolled Mary!");
+        }
+        function enroll4() {
+          document.getElementById("en4").style.visibility = "visible";
+           alert("Succesfully Enrolled Will!");
+        }
+
+        function unenroll1() {
+          document.getElementById("en1").style.visibility = "hidden";
+           alert("Unenrolled Kristine!");
+        }
+        function unenroll2() {
+          document.getElementById("en2").style.visibility = "hidden";
+           alert("Unenrolled John!");
+        }
+        function unenroll3() {
+          document.getElementById("en3").style.visibility = "hidden";
+           alert("Unenrolled Mary!");
+        }
+        function unenroll4() {
+          document.getElementById("en4").style.visibility = "hidden";
+           alert("Unenrolled Will!");
+        }
+
+        function update() {
+          alert("Grades Updated!");
+        }
+    </script>
+</head>
+
+<body class="teacherPage">
+        <div class="teacher" >
+            <ul class="ulpage">
+                <li class="side1"><img class="pic" src="assets/teacher.png"/>&nbsp;&nbsp; Welcome Teacher !</li>
+                <li class="side1"><img class="logohead" src="assets/logo.png" style="margin-left:479px;"/></li>
+                <li class="side2"><a class="active" href="login.html"><i class="glyphicon glyphicon-off"> Log out</i></a></li>
+            </ul>
+            <div class="menu">
+                <ul class="menu">
+                    <li style="width:100%;"><input class="noborder" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    <button type="submit"><i class="glyphicon glyphicon-search"></i></button></li>
+                    <li class="menu"><a class="active" href="#" onclick="show1()"><p class="big" ><i class="glyphicon glyphicon-user"> Students</i></p></a></li>
+                    <li class="menu"><a class="active" href="#" onclick="show2()"><p class="big" ><i class="glyphicon glyphicon-pencil"> Course Grade</i></p></a></li>
+                    <li class="menu3"><a class="btn2" href="info.html" >Learn About MCM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+            <div class="course2" id="cs">
+                <p class="titles"><i class="glyphicon glyphicon-user"></i>&nbsp&nbsp ENROLL STUDENTS</p>
+                <br>
+                <div style="float:left">
+                    <br><br>
+                    <p style="text-align:center;font-size:15px;"><b>Student Roster</b></p>
+                    <div class="roster"><br>
+                        <ol>
+                            <li style="margin-top:30px;margin-right:20px; font-size:22px;">
+                                Kristine Te<input class="btn" type="button" value="Enroll" onclick="enroll1()" style="float:right;">
+                            </li>
+                            <br><br>
+                            <li style="margin-top:30px;margin-right:20px; font-size:22px;">
+                                John Smith<input class="btn" type="button" value="Enroll" onclick="enroll2()" style="float:right;">
+                            </li>
+                            <br><br>
+                            <li style="margin-top:30px;margin-right:20px; font-size:22px;">
+                                Mary Jane<input class="btn" type="button" value="Enroll" onclick="enroll3()" style="float:right;">
+                            </li>
+                            <br><br>
+                            <li style="margin-top:30px;margin-right:20px; font-size:22px;">
+                                Will Robinson<input class="btn" type="button" value="Enroll" onclick="enroll4()" style="float:right;">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div  style="float:right">
+                    <br><br>
+                    <p style="text-align:center;font-size:15px;"><b>Enroll in Course:</b>
+                        <input list="courses" name="course" style="width:150px;">
+                        <datalist id="courses">
+                        <option value="CPE107L">
+                        <option value="CPE151L">
+                        <option value="SAF102">
+                        <option value="CPE101">
+                        </datalist>
+                    </p>
+
+                    <div class="enrolled">
+                        <ul style="list-style-type: none;">
+                            <li style="margin-top:25px;margin-right:20px; font-size:22px;">
+                                <div id="en1" class="en1">
+                                    <table>
+                                        <tr>
+                                        <td><img src="assets/student.png" style="width:85px;margin-left:10px;"/>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:17px;">
+                                            Student ID no:2019123020
+                                            <br>Name:Kristine Te
+                                        </p></td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:17px;">
+                                            Program: CPE
+                                            <br>Email:kte@mcm.edu.ph
+                                        </p></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn" type="button" value="Unenroll" onclick="unenroll1()" style="float:right;margin-right:20px;"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li style="margin-right:20px; font-size:22px;">
+                                <div id="en2" class="en2">
+                                    <table>
+                                        <tr>
+                                        <td><img src="assets/john.png" style="width:85px;margin-left:10px;"/>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:17px;">
+                                            Student ID no:2019123010
+                                            <br>Name:John Smith
+                                        </p></td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:17px;">
+                                            Program: ECE
+                                            <br>Email:jsmith@mcm.edu.ph
+                                        </p></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn" type="button" value="Unenroll" onclick="unenroll2()" style="float:right;margin-right:20px;"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li style="margin-right:20px; font-size:22px;">
+                                <div id="en3" class="en3">
+                                    <table>
+                                        <tr>
+                                        <td><img src="assets/mary.png" style="width:83px;margin-left:10px;"/>&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:16px;">
+                                            Student ID no:2019123201
+                                            <br>Name:Mary Lamb
+                                        </p></td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:17px;">
+                                            Program: CPE
+                                            <br>Email:mLamb@mcm.edu.ph
+                                        </p></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn" type="button" value="Unenroll" onclick="unenroll3()" style="float:right;margin-right:20px;"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+
+                            <li style="margin-right:20px; font-size:22px;">
+                                <div id="en4" class="en4">
+                                    <table>
+                                        <tr>
+                                        <td><img src="assets/will.png" style="width:83px;margin-left:10px;"/>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:15px;">
+                                            Student ID no:2019123001
+                                            <br>Name:Will Robinson
+                                        </p></td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                        <td><p style="font-size:16px;">
+                                            Program: CHE
+                                            <br>Email:wrobinson@mcm.edu.ph
+                                        </p></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn" type="button" value="Unenroll" onclick="unenroll4()" style="float:right;margin-right:20px;"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="grade2" id="gr">
+                <p class="titles"><i class="glyphicon glyphicon-pencil"></i>&nbsp&nbsp EDIT CLASS GRADES</p>
+                <div class="redhead">
+                </div>
+                <div class="editgrade">
+                    <h2>Student Grades</h2>
+
+                    <table id="customers">
+                          <tr>
+                            <th>Lastname</th>
+                            <th>Firstname</th>
+                            <th>Student ID #</th>
+                            <th>Module #</th>
+                            <th>Grade</th>
+                          </tr>
+                          <tr>
+                            <td>Smith</td>
+                            <td>John</td>
+                            <td>2019123010</td>
+                            <td>2nd</td>
+                            <td>98.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Robinson</td>
+                            <td>Will</td>
+                            <td>2019123001</td>
+                            <td>2nd</td>
+                            <td>99.9%</td>
+                          </tr>
+                          <tr>
+                            <td>Lamn</td>
+                            <td>Mary</td>
+                            <td>2019123201</td>
+                            <td>2nd</td>
+                            <td>77%</td>
+                          </tr>
+                          <tr>
+                            <td><input type="text" name="Lname" value="" placeholder="Lastname" required/></td>
+                            <td><input type="text" name="Fname" value="" placeholder="Firstname" required/></td>
+                            <td><input type="text" name="num" value="" placeholder="Student #" required/></td>
+                            <td><input list="tm" name="tm" placeholder="Term" >
+                                <datalist id="tm">
+                                    <option value="1st">
+                                    <option value="2nd">
+                                    <option value="3rd">
+                                </datalist>
+                            </input></td>
+                            <td><input type="text" name="grade" value="%" required/></td>
+                          </tr>
+                    </table>
+                    <br>
+                    <input class="btn" type="button" value="Update Grade" onclick="update()" style="float:right;margin-right:50px;">
+                </div>
+            </div>
+        </section>
+</body>
+
+<footer>
+    <div class="footer">
+    © 2022 Malayan Colleges Mindanao. All Rights Reserved.
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="sis.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script>
+        function wAlert(){
+            alert("Response sent! Thank you for your Feedback!");
+        }
+
+        function show1() {
+          document.getElementById("gd").style.visibility = "visible";
+          document.getElementById("rc").style.visibility = "hidden";
+          document.getElementById("fb").style.visibility = "hidden";
+        }
+
+        function show2() {
+          document.getElementById("gd").style.visibility = "hidden";
+          document.getElementById("rc").style.visibility = "visible";
+          document.getElementById("fb").style.visibility = "hidden";
+        }
+
+        function show3() {
+          document.getElementById("gd").style.visibility = "hidden";
+          document.getElementById("rc").style.visibility = "hidden";
+          document.getElementById("fb").style.visibility = "visible";
+        }
+    </script>
+</head>
+
+<body class="studentPage">
+        <div class="student" >
+            <ul class="ulpage">
+                <li class="side1"><img class="pic" src="assets/student.png"/>&nbsp;&nbsp; Welcome Student !</li>
+                <li class="side1"><img class="logohead" src="assets/logo.png" style="margin-left:480px;"/></li>
+                <li class="side2"><a class="active" href="login.html"><i class="glyphicon glyphicon-off"> Log out</i></a></li>
+            </ul>
+            <div class="menu">
+                <ul class="menu">
+                    <li style="width:100%;"><input class="noborder" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                    <button type="submit"><i class="glyphicon glyphicon-search" ></i></button></li>
+                    <li class="menu"><a class="active" href="#" onclick="show1()"><p class="big" ><i class="glyphicon glyphicon-pencil"> Course Grade </i></p></a></li>
+                    <li class="menu"><a class="active" href="#" onclick="show2()"><p class="big" ><i class="glyphicon glyphicon-list-alt"> Financial Record </i></p></a></li>
+                    <li class="menu"><a class="active" href="#" onclick="show3()"><p class="big" ><i class="glyphicon glyphicon-comment">  Course Feedback </i></p></a></li>
+                    <li class="menu2"><a class="btn2" href="info.html">Learn About MCM</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section>
+        <div class="grade" id="gd">
+            <p class="titles"><i class="glyphicon glyphicon-pencil"></i>&nbsp&nbsp COURSE GRADES</p>
+            <br><br><br>
+            <div style="margin-left: 20px;">
+                <ul class="gradesec" >
+                    <li style="float:left;"><div style="background-color:#261B4B; color:white; width: 360px;border-radius:10px;">
+                    &nbsp;&nbsp;CPE107
+                    <p style="font-size:20px;">
+                            &nbsp;&nbsp;<b>SOFTWARE DESIGN</b></p><br><br>
+                    </div></li>
+
+                    <li style="float:left; margin-left: 15px;"><div style="background-color:#261B4B; color:white; width: 370px;border-radius:10px;">
+                    &nbsp;&nbsp;CPE151
+                    <p style="font-size:20px;">
+                        &nbsp;<b>OPERATING SYSTEM</b></p><br><br>
+                    </div></li>
+
+                    <li style="float:left; margin-left: 15px;"><div style="background-color:#261B4B; color:white; width: 360px;border-radius:10px;">
+                    &nbsp;&nbsp;HUM022
+                    <p style="font-size:20px;">
+                        &nbsp;&nbsp;<b>ADVANCED LOGIC</b></p><br><br>
+                    </div></li>
+                    <br><br><br>
+
+                    <li class="g1">
+                        <br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Task 1</i><img src="assets/58.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Task 2</i><img src="assets/68.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Task 3</i><img src="assets/91.png" style="float:right;"/><br><br><br><br><br>
+                        <a href="#" style="font-size:20px; float:right;" >More</a>
+                    </li>
+
+                    <li class="g2">
+                        <br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Essay</i><img src="assets/91.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Quiz 1</i><img src="assets/68.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Quiz 2</i><img src="assets/58.png" style="float:right;"/><br><br><br><br><br>
+                        <a href="#" style="font-size:20px; float:right;" >More</a>
+                    </li>
+
+                    <li class="g3">
+                        <br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Online task 1</i><img src="assets/91.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Online task 2</i><img src="assets/58.png" style="float:right;"/><br><br><br><br>
+                        <i class="glyphicon glyphicon-list-alt" style="font-size:20px;"> Online task 3</i><img src="assets/68.png" style="float:right;"/><br><br><br><br><br>
+                        <a href="#" style="font-size:20px; float:right;" >More</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <section>
+        <div class="record" id="rc">
+            <p class="titles"><i class="glyphicon glyphicon-list-alt"></i>&nbsp&nbsp FINANCIAL RECORD</p>
+            <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <iframe class="scroll" src="assets/statement.pdf#toolbar=0" width="650px" height="580px">
+                        </iframe>
+                    </td>
+                    <td> &nbsp;&nbsp;&nbsp;</td>
+                    <td><img src="assets/record2.png"  style="width:550px;"/></td>
+                </tr>
+            </table>
+        </div>
+        </section>
+
+        <section>
+        <div class="feedback" id="fb">
+            <p class="titles"><i class="glyphicon glyphicon-comment"></i>&nbsp&nbsp COURSE FEEDBACK</p>
+
+            <div class="feed">
+            <div class="form">
+            <form>
+                <p style="color:white;">Choose Course to write Feedback:</p>
+                <input list="courses" name="course">
+                <datalist id="courses">
+                    <option value="Software Design">
+                    <option value="Operating System">
+                    <option value="Advance Logic">
+                    <option value="CCNA">
+                    <option value="Logic Circuit">
+                </datalist>
+
+                <br><br><br>
+
+                <p style="color:white;">Enter name of Course Instructor:</p>
+                <input list="ins" name="ins">
+                <datalist id="ins">
+                    <option value="Jane Doe">
+                    <option value="John Travis">
+                    <option value="Francis Smith">
+                    <option value="Mary Lamb">
+                    <option value="Danie Brian">
+                </datalist>
+            </form>
+            </div>
+
+            <div class="comment">
+            <form action="#fb" onsubmit= "wAlert()" method="post">
+                <div>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;width:790px;height:250px;">
+                    </textarea>
+                </div>
+                <input class="btn" type="submit" value="Submit" style="margin-left:45%;">
+            </form>
+            </div>
+            </div>
+        </div>
+        </section>
+</body>
+
+<footer>
+    <div class="footer">
+    © 2022 Malayan Colleges Mindanao. All Rights Reserved.
+    </div>
+</footer>
+
+</html>
