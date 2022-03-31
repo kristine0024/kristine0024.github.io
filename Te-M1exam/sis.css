@@ -491,8 +491,8 @@ img.offer{
 }
 img.line{
     padding:20px;
-    width:400px;
-    height:400px;
+    width:380px;
+    height:30px;
 }
 img.line:hover{
         -webkit-transform: scale(1.1);
