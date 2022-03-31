@@ -490,9 +490,9 @@ img.offer{
     width:335px;
 }
 img.line{
-    padding:10px;
-    width:350px;
-    height:350px;
+    padding:20px;
+    width:300px;
+    height:300px;
 }
 img.line:hover{
         -webkit-transform: scale(1.1);
